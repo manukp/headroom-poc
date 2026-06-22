@@ -1,0 +1,802 @@
+[
+  {
+    "id": "EVT-2026-0000",
+    "ts": "2026-06-21T10:00:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 40,
+    "message": "processed payment ok",
+    "amount_usd": 48
+  },
+  {
+    "id": "EVT-2026-0001",
+    "ts": "2026-06-21T10:01:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 45,
+    "message": "processed payment ok",
+    "amount_usd": 176
+  },
+  {
+    "id": "EVT-2026-0002",
+    "ts": "2026-06-21T10:02:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 23,
+    "message": "processed payment ok",
+    "amount_usd": 28
+  },
+  {
+    "id": "EVT-2026-0003",
+    "ts": "2026-06-21T10:03:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 72,
+    "message": "processed payment ok",
+    "amount_usd": 147
+  },
+  {
+    "id": "EVT-2026-0004",
+    "ts": "2026-06-21T10:04:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 26,
+    "message": "processed payment ok",
+    "amount_usd": 103
+  },
+  {
+    "id": "EVT-2026-0005",
+    "ts": "2026-06-21T10:05:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 9000,
+    "message": "processed payment ok",
+    "amount_usd": 50000
+  },
+  {
+    "id": "EVT-2026-0006",
+    "ts": "2026-06-21T10:06:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 57,
+    "message": "processed payment ok",
+    "amount_usd": 24
+  },
+  {
+    "id": "EVT-2026-0007",
+    "ts": "2026-06-21T10:07:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 78,
+    "message": "processed payment ok",
+    "amount_usd": 139
+  },
+  {
+    "id": "EVT-2026-0008",
+    "ts": "2026-06-21T10:08:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 33,
+    "message": "processed payment ok",
+    "amount_usd": 19
+  },
+  {
+    "id": "EVT-2026-0009",
+    "ts": "2026-06-21T10:09:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 25,
+    "message": "processed payment ok",
+    "amount_usd": 121
+  },
+  {
+    "id": "EVT-2026-0010",
+    "ts": "2026-06-21T10:10:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 46,
+    "message": "processed payment ok",
+    "amount_usd": 27
+  },
+  {
+    "id": "EVT-2026-0011",
+    "ts": "2026-06-21T10:11:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 35,
+    "message": "processed payment ok",
+    "amount_usd": 33
+  },
+  {
+    "id": "EVT-2026-0012",
+    "ts": "2026-06-21T10:12:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "ERROR",
+    "latency_ms": 55,
+    "message": "payment declined: card AUTH-FAIL-7781",
+    "amount_usd": 118
+  },
+  {
+    "id": "EVT-2026-0013",
+    "ts": "2026-06-21T10:13:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 23,
+    "message": "processed payment ok",
+    "amount_usd": 154
+  },
+  {
+    "id": "EVT-2026-0014",
+    "ts": "2026-06-21T10:14:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 27,
+    "message": "processed payment ok",
+    "amount_usd": 67
+  },
+  {
+    "id": "EVT-2026-0015",
+    "ts": "2026-06-21T10:15:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 60,
+    "message": "processed payment ok",
+    "amount_usd": 170
+  },
+  {
+    "id": "EVT-2026-0016",
+    "ts": "2026-06-21T10:16:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 57,
+    "message": "processed payment ok",
+    "amount_usd": 25
+  },
+  {
+    "id": "EVT-2026-0017",
+    "ts": "2026-06-21T10:17:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 56,
+    "message": "processed payment ok",
+    "amount_usd": 159
+  },
+  {
+    "id": "EVT-2026-0018",
+    "ts": "2026-06-21T10:18:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 45,
+    "message": "processed payment ok",
+    "amount_usd": 22
+  },
+  {
+    "id": "EVT-2026-0019",
+    "ts": "2026-06-21T10:19:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 34,
+    "message": "processed payment ok",
+    "amount_usd": 21
+  },
+  {
+    "id": "EVT-2026-0020",
+    "ts": "2026-06-21T10:20:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 55,
+    "message": "processed payment ok",
+    "amount_usd": 44
+  },
+  {
+    "id": "EVT-2026-0021",
+    "ts": "2026-06-21T10:21:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 38,
+    "message": "processed payment ok",
+    "amount_usd": 117
+  },
+  {
+    "id": "EVT-2026-0022",
+    "ts": "2026-06-21T10:22:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 29,
+    "message": "processed payment ok",
+    "amount_usd": 148
+  },
+  {
+    "id": "EVT-2026-0023",
+    "ts": "2026-06-21T10:23:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 27,
+    "message": "processed payment ok",
+    "amount_usd": 156
+  },
+  {
+    "id": "EVT-2026-0024",
+    "ts": "2026-06-21T10:24:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 39,
+    "message": "processed payment ok",
+    "amount_usd": 153
+  },
+  {
+    "id": "EVT-2026-0025",
+    "ts": "2026-06-21T10:25:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 72,
+    "message": "processed payment ok",
+    "amount_usd": 184
+  },
+  {
+    "id": "EVT-2026-0026",
+    "ts": "2026-06-21T10:26:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 31,
+    "message": "processed payment ok",
+    "amount_usd": 36
+  },
+  {
+    "id": "EVT-2026-0027",
+    "ts": "2026-06-21T10:27:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 57,
+    "message": "processed payment ok",
+    "amount_usd": 156
+  },
+  {
+    "id": "EVT-2026-0028",
+    "ts": "2026-06-21T10:28:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 60,
+    "message": "processed payment ok",
+    "amount_usd": 58
+  },
+  {
+    "id": "EVT-2026-0029",
+    "ts": "2026-06-21T10:29:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 43,
+    "message": "processed payment ok",
+    "amount_usd": 34
+  },
+  {
+    "id": "EVT-2026-0030",
+    "ts": "2026-06-21T10:30:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 55,
+    "message": "processed payment ok",
+    "amount_usd": 192
+  },
+  {
+    "id": "EVT-2026-0031",
+    "ts": "2026-06-21T10:31:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 24,
+    "message": "processed payment ok",
+    "amount_usd": 154
+  },
+  {
+    "id": "EVT-2026-0032",
+    "ts": "2026-06-21T10:32:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 23,
+    "message": "processed payment ok",
+    "amount_usd": 168
+  },
+  {
+    "id": "EVT-2026-0033",
+    "ts": "2026-06-21T10:33:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 33,
+    "message": "processed payment ok",
+    "amount_usd": 137
+  },
+  {
+    "id": "EVT-2026-0034",
+    "ts": "2026-06-21T10:34:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 63,
+    "message": "processed payment ok",
+    "amount_usd": 146
+  },
+  {
+    "id": "EVT-2026-0035",
+    "ts": "2026-06-21T10:35:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 47,
+    "message": "processed payment ok",
+    "amount_usd": 90
+  },
+  {
+    "id": "EVT-2026-0036",
+    "ts": "2026-06-21T10:36:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 49,
+    "message": "processed payment ok",
+    "amount_usd": 159
+  },
+  {
+    "id": "EVT-2026-0037",
+    "ts": "2026-06-21T10:37:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "ERROR",
+    "latency_ms": 79,
+    "message": "payment declined: card AUTH-FAIL-7781",
+    "amount_usd": 126
+  },
+  {
+    "id": "EVT-2026-0038",
+    "ts": "2026-06-21T10:38:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 43,
+    "message": "processed payment ok",
+    "amount_usd": 86
+  },
+  {
+    "id": "EVT-2026-0039",
+    "ts": "2026-06-21T10:39:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 35,
+    "message": "processed payment ok",
+    "amount_usd": 56
+  },
+  {
+    "id": "EVT-2026-0040",
+    "ts": "2026-06-21T10:40:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 64,
+    "message": "processed payment ok",
+    "amount_usd": 72
+  },
+  {
+    "id": "EVT-2026-0041",
+    "ts": "2026-06-21T10:41:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 25,
+    "message": "processed payment ok",
+    "amount_usd": 157
+  },
+  {
+    "id": "EVT-2026-0042",
+    "ts": "2026-06-21T10:42:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 39,
+    "message": "processed payment ok",
+    "amount_usd": 144
+  },
+  {
+    "id": "EVT-2026-0043",
+    "ts": "2026-06-21T10:43:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 51,
+    "message": "processed payment ok",
+    "amount_usd": 97
+  },
+  {
+    "id": "EVT-2026-0044",
+    "ts": "2026-06-21T10:44:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 66,
+    "message": "processed payment ok",
+    "amount_usd": 124
+  },
+  {
+    "id": "EVT-2026-0045",
+    "ts": "2026-06-21T10:45:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 38,
+    "message": "processed payment ok",
+    "amount_usd": 165
+  },
+  {
+    "id": "EVT-2026-0046",
+    "ts": "2026-06-21T10:46:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 24,
+    "message": "processed payment ok",
+    "amount_usd": 40
+  },
+  {
+    "id": "EVT-2026-0047",
+    "ts": "2026-06-21T10:47:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 52,
+    "message": "processed payment ok",
+    "amount_usd": 117
+  },
+  {
+    "id": "EVT-2026-0048",
+    "ts": "2026-06-21T10:48:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 30,
+    "message": "processed payment ok",
+    "amount_usd": 97
+  },
+  {
+    "id": "EVT-2026-0049",
+    "ts": "2026-06-21T10:49:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 29,
+    "message": "processed payment ok",
+    "amount_usd": 135
+  },
+  {
+    "id": "EVT-2026-0050",
+    "ts": "2026-06-21T10:50:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 9000,
+    "message": "processed payment ok",
+    "amount_usd": 50000
+  },
+  {
+    "id": "EVT-2026-0051",
+    "ts": "2026-06-21T10:51:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 46,
+    "message": "processed payment ok",
+    "amount_usd": 20
+  },
+  {
+    "id": "EVT-2026-0052",
+    "ts": "2026-06-21T10:52:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 62,
+    "message": "processed payment ok",
+    "amount_usd": 29
+  },
+  {
+    "id": "EVT-2026-0053",
+    "ts": "2026-06-21T10:53:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 68,
+    "message": "processed payment ok",
+    "amount_usd": 152
+  },
+  {
+    "id": "EVT-2026-0054",
+    "ts": "2026-06-21T10:54:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 56,
+    "message": "processed payment ok",
+    "amount_usd": 90
+  },
+  {
+    "id": "EVT-2026-0055",
+    "ts": "2026-06-21T10:55:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 41,
+    "message": "processed payment ok",
+    "amount_usd": 187
+  },
+  {
+    "id": "EVT-2026-0056",
+    "ts": "2026-06-21T10:56:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 42,
+    "message": "processed payment ok",
+    "amount_usd": 162
+  },
+  {
+    "id": "EVT-2026-0057",
+    "ts": "2026-06-21T10:57:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 51,
+    "message": "processed payment ok",
+    "amount_usd": 158
+  },
+  {
+    "id": "EVT-2026-0058",
+    "ts": "2026-06-21T10:58:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 71,
+    "message": "processed payment ok",
+    "amount_usd": 126
+  },
+  {
+    "id": "EVT-2026-0059",
+    "ts": "2026-06-21T10:59:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 24,
+    "message": "processed payment ok",
+    "amount_usd": 33
+  },
+  {
+    "id": "EVT-2026-0060",
+    "ts": "2026-06-21T10:00:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 80,
+    "message": "processed payment ok",
+    "amount_usd": 79
+  },
+  {
+    "id": "EVT-2026-0061",
+    "ts": "2026-06-21T10:01:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "ERROR",
+    "latency_ms": 50,
+    "message": "payment declined: card AUTH-FAIL-7781",
+    "amount_usd": 188
+  },
+  {
+    "id": "EVT-2026-0062",
+    "ts": "2026-06-21T10:02:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 62,
+    "message": "processed payment ok",
+    "amount_usd": 26
+  },
+  {
+    "id": "EVT-2026-0063",
+    "ts": "2026-06-21T10:03:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 23,
+    "message": "processed payment ok",
+    "amount_usd": 197
+  },
+  {
+    "id": "EVT-2026-0064",
+    "ts": "2026-06-21T10:04:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 64,
+    "message": "processed payment ok",
+    "amount_usd": 89
+  },
+  {
+    "id": "EVT-2026-0065",
+    "ts": "2026-06-21T10:05:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 61,
+    "message": "processed payment ok",
+    "amount_usd": 157
+  },
+  {
+    "id": "EVT-2026-0066",
+    "ts": "2026-06-21T10:06:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 63,
+    "message": "processed payment ok",
+    "amount_usd": 124
+  },
+  {
+    "id": "EVT-2026-0067",
+    "ts": "2026-06-21T10:07:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 38,
+    "message": "processed payment ok",
+    "amount_usd": 193
+  },
+  {
+    "id": "EVT-2026-0068",
+    "ts": "2026-06-21T10:08:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 44,
+    "message": "processed payment ok",
+    "amount_usd": 181
+  },
+  {
+    "id": "EVT-2026-0069",
+    "ts": "2026-06-21T10:09:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 42,
+    "message": "processed payment ok",
+    "amount_usd": 15
+  },
+  {
+    "id": "EVT-2026-0070",
+    "ts": "2026-06-21T10:10:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 80,
+    "message": "processed payment ok",
+    "amount_usd": 128
+  },
+  {
+    "id": "EVT-2026-0071",
+    "ts": "2026-06-21T10:11:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 42,
+    "message": "processed payment ok",
+    "amount_usd": 53
+  },
+  {
+    "id": "EVT-2026-0072",
+    "ts": "2026-06-21T10:12:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 59,
+    "message": "processed payment ok",
+    "amount_usd": 39
+  },
+  {
+    "id": "EVT-2026-0073",
+    "ts": "2026-06-21T10:13:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 51,
+    "message": "processed payment ok",
+    "amount_usd": 25
+  },
+  {
+    "id": "EVT-2026-0074",
+    "ts": "2026-06-21T10:14:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 33,
+    "message": "processed payment ok",
+    "amount_usd": 83
+  },
+  {
+    "id": "EVT-2026-0075",
+    "ts": "2026-06-21T10:15:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 28,
+    "message": "processed payment ok",
+    "amount_usd": 199
+  },
+  {
+    "id": "EVT-2026-0076",
+    "ts": "2026-06-21T10:16:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 35,
+    "message": "processed payment ok",
+    "amount_usd": 111
+  },
+  {
+    "id": "EVT-2026-0077",
+    "ts": "2026-06-21T10:17:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 45,
+    "message": "processed payment ok",
+    "amount_usd": 137
+  },
+  {
+    "id": "EVT-2026-0078",
+    "ts": "2026-06-21T10:18:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 25,
+    "message": "processed payment ok",
+    "amount_usd": 52
+  },
+  {
+    "id": "EVT-2026-0079",
+    "ts": "2026-06-21T10:19:00Z",
+    "service": "billing",
+    "region": "us-east-1",
+    "level": "INFO",
+    "latency_ms": 48,
+    "message": "processed payment ok",
+    "amount_usd": 112
+  }
+]

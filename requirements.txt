@@ -1,0 +1,18 @@
+# Headroom PoC — pinned dependencies (Python 3.10).
+# The library under test. Pin exact version: claims/defaults are version-specific (D8).
+headroom-ai==0.26.0
+
+# AWS Bedrock inference leg (D3). Creds via env/profile only — never committed (Guardrail 5).
+boto3>=1.34,<2
+
+# Terminal result visualization (D2). Headroom already depends on rich; pin a floor here too.
+rich>=13,<15
+
+# TOML config parsing on Python 3.10 (stdlib tomllib is 3.11+). Already a transitive dep.
+tomli>=2,<3 ; python_version < "3.11"
+
+# LLMLingua: the docs describe `from headroom.transforms import LLMLinguaCompressor` and a
+# `headroom-ai[llmlingua]` extra, but NEITHER exists in 0.26.0 (D14): that extra is not
+# declared (pip install is a no-op + warns), and "LLMLingua" appears nowhere in the package.
+# The run_llmlingua runner introspects for the class and reports an accurate skip when absent;
+# it auto-wires if a future headroom-ai version ships it. Re-check on any version bump (D8).

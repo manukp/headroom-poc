@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Headroom PoC run outputs (keep dir, ignore generated runs)
+results/*/

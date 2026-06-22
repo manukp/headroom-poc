@@ -1,0 +1,132 @@
+# =============================================================================
+# Headroom PoC — run configuration (config is the source of truth; D7/Guardrail 7)
+#
+# This file is RE-READ ON EVERY RUN. Edit it between runs to tune any tested
+# Headroom feature without restarting anything.
+#
+# Null convention (TOML has no null, D10): empty string "" and the sentinel 0 /
+# 0.0 on *optional* fields are mapped to Python None by the loader. Fields whose
+# real default is 0/0.0 are documented inline.
+#
+# Parameter names + defaults below mirror the INSTALLED headroom-ai==0.26.0 API
+# (see IMPLEMENTATION_LOG.md §6), NOT the docs cheat-sheet where they differ.
+# =============================================================================
+
+[run]
+# "simulation" = local transform pipeline only, no AWS, no cost, no latency.
+# "bedrock"    = also run the inference + LLM-as-judge legs (needs [bedrock]).
+mode = "simulation"
+
+# Which compression features to exercise this run.
+# Options: "compress", "simulation", "smart_crusher", "universal", "llmlingua".
+features = ["compress", "simulation", "smart_crusher", "universal"]
+
+# Input selection. "auto" = load everything under data/ (and generate synthetic
+# defaults there first if data/ is empty and generate_synthetic_if_empty=true).
+# Otherwise list explicit file paths (relative to repo root or absolute).
+inputs = ["auto"]
+generate_synthetic_if_empty = true
+
+# Where per-run JSON + captured artifacts are written.
+results_dir = "results"
+
+
+[model]
+# Headroom model id used for tokenization and compress(). This is the Headroom
+# model name (for tokenizer selection), independent of the Bedrock model id.
+compress_model = "claude-sonnet-4-5-20250929"
+# Context window used by compress()/simulate(). Required by the simulate path.
+model_limit = 200000
+
+
+# --- compress() / CompressConfig -------------------------------------------
+[compress]
+optimize = true
+# NOTE: user messages are protected by default in headroom; keep true here so
+# prose carried in a user turn actually gets compressed (IMPLEMENTATION_LOG §6).
+compress_user_messages = true
+compress_system_messages = true
+protect_recent = 4
+protect_analysis_context = true
+target_ratio = 0.0        # 0.0 -> None (no explicit target ratio)
+min_tokens_to_compress = 250
+kompress_model = ""       # "" -> None (use library default)
+savings_profile = ""      # "" -> None
+
+
+# --- SmartCrusher / SmartCrusherConfig (JSON arrays) -----------------------
+[smart_crusher]
+enabled = true
+min_items_to_analyze = 5
+min_tokens_to_crush = 200
+variance_threshold = 2.0
+uniqueness_threshold = 0.1
+similarity_threshold = 0.8
+max_items_after_crush = 15
+preserve_change_points = true
+factor_out_constants = false
+include_summaries = false
+use_feedback_hints = true
+toin_confidence_threshold = 0.3
+dedup_identical_items = true
+first_fraction = 0.3
+last_fraction = 0.15
+lossless_min_savings_ratio = 0.3
+# Query + bias passed to crush(content, query=, bias=).
+query = "error"
+bias = 1.0
+
+[smart_crusher.relevance]   # RelevanceScorerConfig (nested)
+tier = "hybrid"             # "bm25" | "embedding" | "hybrid"
+bm25_k1 = 1.5
+bm25_b = 0.75
+hybrid_alpha = 0.5
+adaptive_alpha = true
+relevance_threshold = 0.25
+
+
+# --- compression.UniversalCompressor (structure-aware text/JSON/code) ------
+[universal]
+enabled = true
+use_magika = true
+# Kompress neural model crashes on this CPU (ONNX 4-bit-quant matmul); default
+# off here so the structure-aware path still runs. See IMPLEMENTATION_LOG §6/D13.
+use_kompress = false
+use_entropy_preservation = true
+entropy_threshold = 0.85
+min_content_length = 100
+compression_ratio_target = 0.3
+ccr_enabled = true
+
+
+# --- LLMLingua (optional extra; skipped if package not installed) -----------
+# NOTE: LLMLingua is NOT available in headroom-ai==0.26.0 (D14) — no `llmlingua`
+# extra, no LLMLinguaCompressor class. Enabling this + adding "llmlingua" to
+# run.features yields an accurate "no LLMLingua compressor" skip, not a crash.
+# These params auto-wire if a future headroom-ai version ships the compressor.
+[llmlingua]
+enabled = false
+device = "auto"            # "auto" | "cuda" | "cpu" | "mps"
+code_compression_rate = 0.4
+json_compression_rate = 0.35
+text_compression_rate = 0.25
+
+
+# --- Bedrock inference + judge (config-only; D4. Creds via env/profile) -----
+[bedrock]
+# Must be true AND run.mode="bedrock" to make any AWS call.
+enabled = false
+region = ""               # e.g. "us-east-1" — REQUIRED for bedrock mode
+model_id = ""             # e.g. "anthropic.claude-3-5-sonnet-20241022-v2:0"
+judge_model_id = ""       # "" -> reuse model_id for the judge
+max_tokens = 1024
+temperature = 0.0
+anthropic_version = "bedrock-2023-05-31"
+
+
+# --- Verbatim-quote survival check -----------------------------------------
+[verbatim]
+# Load-bearing strings whose exact survival through compression we assert.
+# The harness also auto-extracts likely load-bearing strings (IDs, quoted
+# clauses, $amounts) from each input; these are added on top.
+strings = []
